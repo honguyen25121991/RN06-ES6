@@ -127,11 +127,11 @@
 // console.log(sum(sum(7, 6), 5));
 
 function sum(...number) {
-  console.log(number);
   let result = 0;
   for (let index = 0; index < number.length; index++) {
     result += number[index];
   }
+  console.log(result);
 }
 
-sum(1, 2, 5);
+sum(1, 6, 8, 6, 2, 5);
