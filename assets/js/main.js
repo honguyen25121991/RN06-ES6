@@ -1,3 +1,5 @@
+import { Student } from "./studen.js";
+import { StudentWitdAddress } from "./studenWidthAddres.js";
 // var a = 10;
 
 // var a = "React Native 04";
@@ -206,17 +208,65 @@
 // console.log(b);
 // console.log(c);
 
-const className = "React Native";
-const numberClass = 4;
-
+// const className = "React Native";
+// const numberClass = 4;
+//
 // console.log("Xin chao " + className + " 0 " + numberClass);
 // console.log(`Xin chao ${className} 0${numberClass}`);
 
-const infoClass = {
-  className,
-  numberClass,
-};
+// const infoClass = {
+//   className,
+//   numberClass,
+// };
 
-infoClass.className;
+// infoClass.className;
 
-console.log(infoClass["className"]);
+// console.log(infoClass["className"]);
+
+// const arrayTect = ["React Native", "Android", "iOS"];
+// for (let i in arrayTect) {
+// console.log(i, arrayTect[i]);
+// }
+
+// for (let i of arrayTect) {
+//   console.log(i);
+// }
+
+// const students = {
+//   hoten: "React Native",
+//   lop: "04",
+//   diaChi: {
+//     tenDuong: "Le Van Sy",
+//     soNha: "20",
+//     quan: "3",
+//   },
+// };
+
+// for (let i in students) {
+//   console.log(i, students[i]);
+// }
+
+// const lissStudens = [
+//   { ...students, hoten: "Nguyen Van A ", lop: "01" },
+//   { ...students, hoten: "Nguyen Van B ", lop: "01" },
+//   { ...students, hoten: "Nguyen Van C ", lop: "01" },
+// ];
+
+// for (let i of lissStudens) {
+//   console.log(i);
+// }
+
+const studen_1 = new Student("React Native", 19);
+const studen_2 = new Student("React Native", 20);
+const studen_3 = new Student("React Native", 21);
+
+// console.log(studen_1);
+
+// studen_1.getInfoStudent();
+// studen_2.getInfoStudent();
+// studen_3.getInfoStudent();
+
+const studen_4 = new StudentWitdAddress("Nguyen Van A", 21, "HCM");
+// console.log(studen_4);
+
+studen_4.getInfoStudent();
