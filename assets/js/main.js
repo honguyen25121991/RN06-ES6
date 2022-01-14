@@ -126,12 +126,97 @@
 
 // console.log(sum(sum(7, 6), 5));
 
-function sum(...number) {
-  let result = 0;
-  for (let index = 0; index < number.length; index++) {
-    result += number[index];
-  }
-  console.log(result);
-}
+// function sum(...number) {
+//   let result = 0;
+//   for (let index = 0; index < number.length; index++) {
+//     result += number[index];
+//   }
+//   console.log(result);
+// }
 
-sum(1, 6, 8, 6, 2, 5);
+// sum(1, 6, 8, 6, 2, 5);
+
+// const students = {
+//   hoten: "React Native",
+//   lop: "04",
+// };
+
+// const students_2 = {
+//   hoten: "React Native",
+//   lop: "04",
+// };
+
+// const students_3 = { ...students };
+// students_3.hoten = "RN";
+// students_3.lop = "05";
+
+// const students_4 = {
+//   ...students,
+//   hoten: "React JS",
+//   lop: "05",
+//   diaChi: "hcm",
+// };
+
+// console.log(students);
+// console.log(students_2);
+// console.log(students_3);
+
+// console.log(students_4);
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const copy = [...array];
+// copy.push(11, 12);
+// console.log(copy);
+
+// let str = "fro";
+// let char = [...str];
+// console.log(char);
+// const students = {
+// hoten: "React Native",
+// lop: "04",
+// diaChi: {
+// tenDuong: "Le Van Sy",
+// soNha: "20",
+// quan: "3",
+// },
+// };
+
+// const {
+// hoten: ten,
+// lop: lop,
+// diaChi: { tenDuong, soNha, quan },
+// } = students;
+/**
+ * const hoTen = studen.hoten
+ * const lop = studen.lop
+ * const diachi = studen.diachi
+ *
+ */
+
+// console.log(ten);
+// console.log(lop);
+// console.log(diaChi);
+
+// console.log(students.diaChi.tenDuong);
+
+// const array = ["React Native", " Android", "iOS"];
+// const [, , c] = array;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+const className = "React Native";
+const numberClass = 4;
+
+// console.log("Xin chao " + className + " 0 " + numberClass);
+// console.log(`Xin chao ${className} 0${numberClass}`);
+
+const infoClass = {
+  className,
+  numberClass,
+};
+
+infoClass.className;
+
+console.log(infoClass["className"]);
